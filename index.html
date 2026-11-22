@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yashpal Bhati | Java Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Yashpal Bhati, Java Full Stack Developer (Spring Boot, Hibernate, React) from Jaipur."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="loader"><span>YB</span></div>
+    <div id="progress"></div>
+    <div class="cur-ring"></div>
+    <div class="cur-dot"></div>
+
+    <nav>
+      <a href="#home" class="logo">YB.</a>
+      <ul id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- HERO -->
+    <header id="home">
+      <!-- Put a short walking clip at assets/walk.mp4 (under 5 MB, 1080p max) -->
+      <video
+        class="hero-video"
+        id="heroVideo"
+        src="assets/walk.mp4"
+        muted
+        loop
+        playsinline
+        autoplay
+        preload="metadata"
+      ></video>
+      <div class="hero-shade"></div>
+      <div class="wrap hero-in">
+        <p class="status"><i></i> Open to Java Full Stack roles</p>
+        <h1 class="name"><span>Yashpal</span> <span>Bhati</span></h1>
+        <p class="role">I'm a <b id="typed"></b><em class="caret"></em></p>
+        <p class="lead">
+          I build secure Spring Boot backends and React frontends, from database
+          schema to deployed screen.
+        </p>
+        <div class="btns">
+          <a href="#projects" class="btn gold magnetic">View my work</a>
+          <a
+            href="Yashpal_Java_Full-Stack_Developer_Resume.pdf"
+            target="_blank"
+            rel="noopener"
+            class="btn line magnetic"
+            ><i class="fa-solid fa-file-arrow-down"></i> Resume</a
+          >
+        </div>
+        <div class="socials">
+          <a
+            href="https://www.linkedin.com/in/yashpal-bhati-028064294/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://github.com/YashpalBhati68"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://leetcode.com/u/Yashpal_Bhati/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LeetCode"
+            ><i class="devicon-leetcode-plain"></i
+          ></a>
+        </div>
+      </div>
+      <button
+        class="intro-btn"
+        id="introBtn"
+        aria-label="Play my introduction video"
+      >
+        <svg viewBox="0 0 120 120">
+          <defs>
+            <path
+              id="ring"
+              d="M60,60 m-47,0 a47,47 0 1,1 94,0 a47,47 0 1,1 -94,0"
+            />
+          </defs>
+          <text>
+            <textPath href="#ring">WATCH MY INTRO • WATCH MY INTRO •</textPath>
+          </text>
+        </svg>
+        <span class="play"><i class="fa-solid fa-play"></i></span>
+      </button>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="wrap">
+        <h2 class="title rv">A developer who likes<br />finishing things.</h2>
+        <div class="about-grid">
+          <div class="photo rv">
+            <img src="Yashpal_Bhati.jpeg" alt="Yashpal Bhati" loading="lazy" />
+          </div>
+          <div class="rv">
+            <p>
+              I'm Yashpal, a B.Tech student (2023 to 2027, CGPA 8.29) from
+              Jaipur. I started with web basics at SingleTap, then moved to the
+              MERN stack, and now work mainly in the Java ecosystem: Spring
+              Boot, Spring Security, Hibernate and React.
+            </p>
+            <p>
+              At Grass Solutions I built layered REST backends with JWT and
+              role-based access, designed relational schemas, and connected them
+              to React frontends. My bigger projects, QuickBuy and FinTrust,
+              handle real payment flows, OTP verification and fraud rules.
+            </p>
+            <p>
+              I'm looking for a Java Full Stack role where I can ship features,
+              learn from a strong team, and keep solving problems on LeetCode on
+              the side.
+            </p>
+            <div class="stats">
+              <div><b data-n="3">0</b><span>Internships</span></div>
+              <div>
+                <b data-n="6" data-s="+">0</b><span>Projects on GitHub</span>
+              </div>
+              <div><b data-n="8.29" data-d="2">0</b><span>CGPA</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="wrap">
+        <h2 class="title rv">What I work with</h2>
+        <div class="skill-grid" id="skillGrid"></div>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section id="journey">
+      <div class="wrap">
+        <h2 class="title rv">Experience and education</h2>
+        <div class="tl" id="timeline"><i class="tl-fill" id="tlFill"></i></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="wrap">
+        <h2 class="title rv">Projects</h2>
+        <p class="sub rv">Click a project for details.</p>
+        <div class="proj-grid" id="projGrid"></div>
+        <a
+          class="btn line more"
+          href="https://github.com/YashpalBhati68?tab=repositories"
+          target="_blank"
+          rel="noopener"
+          >All 18 repositories on GitHub</a
+        >
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates">
+      <div class="wrap">
+        <h2 class="title rv">Certificates and awards</h2>
+        <p class="sub rv">Click to view full size.</p>
+        <div class="cert-grid" id="certGrid"></div>
+        <div class="more-wrap">
+          <button class="btn line" id="certMore" hidden>Show more</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="wrap">
+        <h2 class="title rv">Let's work together</h2>
+        <div class="contact-grid">
+          <div class="rv">
+            <p>
+              Have a role, an internship or a project in mind? Send a message
+              and I'll reply within a day.
+            </p>
+            <a class="c-item" href="mailto:yashpalbhati699@gmail.com"
+              ><i class="fa-solid fa-envelope"></i> yashpalbhati699@gmail.com</a
+            >
+            <a class="c-item" href="tel:+919680437876"
+              ><i class="fa-solid fa-phone"></i> +91 96804 37876</a
+            >
+            <span class="c-item"
+              ><i class="fa-solid fa-location-dot"></i> Jaipur, Rajasthan,
+              India</span
+            >
+          </div>
+          <form id="contactForm" class="rv">
+            <input name="name" placeholder="Your name" required />
+            <input
+              name="email"
+              type="email"
+              placeholder="Your email"
+              required
+            />
+            <input name="subject" placeholder="Subject" />
+            <textarea
+              name="message"
+              placeholder="Your message"
+              required
+            ></textarea>
+            <button class="btn gold" type="submit">Send message</button>
+            <p id="formStatus" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer><p>Designed and built by Yashpal Bhati, Jaipur</p></footer>
+
+    <div class="modal" id="modal" aria-hidden="true">
+      <div class="modal-box" id="modalBox"></div>
+      <button class="x" id="modalX" aria-label="Close">&times;</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
